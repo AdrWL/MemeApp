@@ -1,0 +1,8 @@
+.Nav ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.Nav li {
+    text-decoration: none; 
+}
