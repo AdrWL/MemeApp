@@ -6,3 +6,24 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+/* App.css */
+
+.container {
+  display: flex;
+  height: 100vh; /* Pełna wysokość widoku */
+}
+
+nav {
+  width: 200px; 
+  background-color: #333; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+}
+
+.mem-main {
+  flex-grow: 1;
+  padding: 20px; 
+}

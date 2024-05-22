@@ -7,9 +7,9 @@ import Regular from "./components/Regular/Regular";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="container">
         <Navigation />
-        <div className="Mem-main">
+        <div className="mem-main">
           <Routes>
             <Route path="/hot" element={<Hot />} />
             <Route path="/regular" element={<Regular />} />

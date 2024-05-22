@@ -9,7 +9,7 @@ export default function Navigation() {
             <div className='Nav'>
                 <ul>
                     <li>
-                        <Link to="/">
+                        <Link to="/regular">
                             <Button variant="contained">Regular</Button>
                         </Link>
                     </li>
