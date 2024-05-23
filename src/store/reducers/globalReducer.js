@@ -5,24 +5,28 @@ const initialState = {
       upvotes: 6,
       downvotes: 0,
       img: "path/to/image1.png",
+      value: "2",
     },
     {
       title: "Mem 2",
       upvotes: 1,
       downvotes: 2,
       img: "path/to/image2.png",
+      value: "2",
     },
     {
       title: "Mem 3",
       upvotes: 6,
       downvotes: 0,
       img: "path/to/image3.png",
+      value: "2",
     },
     {
       title: "Mem 4",
       upvotes: 6,
       downvotes: 0,
       img: "path/to/image4.png",
+      value: "2",
     },
   ],
 };
