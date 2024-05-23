@@ -1,63 +1,14 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-/* App.css */
-
 .container {
   display: flex;
-  height: 100vh; /* Pełna wysokość widoku */
-}
-
-nav {
-  width: 200px; 
-  background-color: #333; 
-  padding: 10px; 
-  box-sizing: border-box; 
-  display: flex;
-  flex-direction: column;
+  height: 100vh;
 }
 
 .mem-main {
   flex-grow: 1;
-  display: flex;
-  justify-content: center; /* Wyśrodkowanie w poziomie */
-  align-items: center; /* Wyśrodkowanie w pionie */
-  padding: 20px; /* Opcjonalne, aby dodać odstęp od lewej strony */
-  flex-direction: column;
-}
-
-.main-rectangle {
-  width: 300px; /* Szerokość głównego prostokąta */
-  height: 400px; /* Wysokość głównego prostokąta */
-  background-color: #ccc; /* Kolor tła głównego prostokąta */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   padding: 20px;
-  box-sizing: border-box;
 }
 
-.main-image {
-  width: 100%;
-  height: auto;
-  max-height: 60%;
-}
-
-.sub-rectangles {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.sub-rectangle {
-  width: 45%; /* Szerokość mniejszych prostokątów */
-  height: 100px; /* Wysokość mniejszych prostokątów */
-  background-color: #aaa; /* Kolor tła mniejszych prostokątów */
+.main-box {
+  border: 1px solid #ddd;
+  padding: 20px;
 }

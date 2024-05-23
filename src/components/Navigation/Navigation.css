@@ -1,23 +1,42 @@
-.Nav {
+nav {
+    width: 200px;
+    background-color: #333;
+    padding: 10px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Wyśrodkowanie w poziomie */
-  }
+}
 
-.Nav ul {
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-container ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.Nav ul li {
+.nav-container ul li {
     margin: 10px 0;
 }
 
-.Nav ul li a {
+.nav-container ul li a {
     text-decoration: none;
 }
 
-.Nav ul li button {
+.nav-container ul li button {
     width: 150px;
 }

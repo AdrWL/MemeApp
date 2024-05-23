@@ -1,0 +1,32 @@
+.mem {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.mem-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.mem img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mem .mem-voites {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.mem .mem-button-voite {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}

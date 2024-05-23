@@ -1,28 +1,24 @@
 const initialState = {
   memes: [
     {
-      id: 1,
       title: "Mem 1",
       upvotes: 6,
       downvotes: 0,
       img: "path/to/image1.png",
     },
     {
-      id: 2,
       title: "Mem 2",
-      upvotes: 6,
-      downvotes: 0,
+      upvotes: 1,
+      downvotes: 2,
       img: "path/to/image2.png",
     },
     {
-      id: 3,
       title: "Mem 3",
       upvotes: 6,
       downvotes: 0,
       img: "path/to/image3.png",
     },
     {
-      id: 4,
       title: "Mem 4",
       upvotes: 6,
       downvotes: 0,
@@ -33,9 +29,9 @@ const initialState = {
 
 export const memeReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "ADD_UPVOTE": {
-      const index = state.memes.findIndex((mem) => mem.id === action.payload);
-      if (index === -1) return state; 
+    case "UPVOTE": {
+      const index = state.memes.findIndex((mem) => mem.title === action.payload);
+      if (index === -1) return state;
 
       const newMemes = [...state.memes];
       newMemes[index] = {
@@ -47,9 +43,9 @@ export const memeReducer = (state = initialState, action) => {
         memes: newMemes,
       };
     }
-    case "ADD_DOWNVOTE": {
-      const index = state.memes.findIndex((mem) => mem.id === action.payload);
-      if (index === -1) return state; 
+    case "DOWNVOTE": {
+      const index = state.memes.findIndex((mem) => mem.title === action.payload);
+      if (index === -1) return state;
 
       const newMemes = [...state.memes];
       newMemes[index] = {

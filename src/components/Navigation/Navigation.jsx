@@ -6,7 +6,7 @@ import './Navigation.css';
 export default function Navigation() {
     return (
         <nav>
-            <div className='Nav'>
+            <div className='nav-container'>
                 <ul>
                     <li>
                         <Link to="/regular">

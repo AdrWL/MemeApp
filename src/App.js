@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
@@ -10,17 +11,12 @@ function App() {
       <div className="container">
         <Navigation />
         <div className="mem-main">
-          <div className="main-rectangle">
-            <img alt="Mem" className="main-image" />
-            <div className="sub-rectangles">
-              <div className="sub-rectangle"></div>
-              <div className="sub-rectangle"></div>
-            </div>
+          <div className="main-box">
+            <Routes>
+              <Route path="/hot" element={<Hot />} />
+              <Route path="/regular" element={<Regular />} />
+            </Routes>
           </div>
-          <Routes>
-            <Route path="/hot" element={<Hot />} />
-            <Route path="/regular" element={<Regular />} />
-          </Routes>
         </div>
       </div>
     </Router>
