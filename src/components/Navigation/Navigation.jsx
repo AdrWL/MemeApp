@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Button from '@mui/material/Button';
 import './Navigation.css';
 
@@ -9,14 +9,14 @@ export default function Navigation() {
             <div className='nav-container'>
                 <ul>
                     <li>
-                        <Link to="/regular">
+                        <NavLink to="/regular">
                             <Button variant="contained">Regular</Button>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/hot">
+                        <NavLink to="/hot">
                             <Button variant="contained">Hot</Button>
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </div>
