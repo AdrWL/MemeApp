@@ -10,6 +10,13 @@ function App() {
       <div className="container">
         <Navigation />
         <div className="mem-main">
+          <div className="main-rectangle">
+            <img alt="Mem" className="main-image" />
+            <div className="sub-rectangles">
+              <div className="sub-rectangle"></div>
+              <div className="sub-rectangle"></div>
+            </div>
+          </div>
           <Routes>
             <Route path="/hot" element={<Hot />} />
             <Route path="/regular" element={<Regular />} />
