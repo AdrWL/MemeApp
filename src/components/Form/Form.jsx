@@ -6,6 +6,7 @@ import './Form.css';
 export default function Form() {
     const [title, setTitle] = useState('');
     const [img, setImg] = useState('');
+    const [success, setSuccess] = useState(false);
     const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
@@ -22,6 +23,8 @@ export default function Form() {
         });
         setTitle('');
         setImg('');
+        setSuccess(true);
+        setTimeout(() => setSuccess(false), 3000); 
     };
 
     return (
@@ -48,6 +51,7 @@ export default function Form() {
                         required
                     />
                 </div>
+                {success && <h2 className="success-message">Mem został dodany do bazy!</h2>} 
                 <Button variant="contained" type="submit">Dodaj</Button>
             </form>
         </div>

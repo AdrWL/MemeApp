@@ -22,3 +22,9 @@
     box-sizing: border-box;
   }
   
+  .success-message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
