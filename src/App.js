@@ -5,6 +5,8 @@ import Navigation from './components/Navigation/Navigation';
 import Hot from './components/Hot/Hot';
 import Regular from './components/Regular/Regular';
 import Form from './components/Form/Form';
+import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -17,8 +19,10 @@ function App() {
               <Route path="/hot" element={<Hot />} />
               <Route path="/regular" element={<Regular />} />
               <Route path="/form" element={<Form />} />
+              <Route path="/" element={<Home/>} />
             </Routes>
           </div>
+          <Footer />
         </div>
       </div>
     </Router>

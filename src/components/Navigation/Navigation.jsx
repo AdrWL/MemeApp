@@ -8,6 +8,11 @@ export default function Navigation() {
         <nav>
             <div className='nav-container'>
                 <ul>
+                <li>
+                        <NavLink to="/">
+                            <Button variant="contained">Home</Button>
+                        </NavLink>
+                    </li>
                     <li>
                         <NavLink to="/regular">
                             <Button variant="contained">Regular</Button>
