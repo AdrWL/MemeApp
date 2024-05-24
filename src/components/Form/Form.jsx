@@ -17,7 +17,7 @@ export default function Form() {
                 upvotes: 0,
                 downvotes: 0,
                 img,
-                value: 0,
+                value: 2,
             },
         });
         setTitle('');
@@ -26,10 +26,10 @@ export default function Form() {
 
     return (
         <div className="form-container">
-            <h2>Add a New Meme</h2>
+            <h2>Dodaj nowego mema</h2>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="title">Title:</label>
+                    <label htmlFor="title">Tytuł mema:</label>
                     <input
                         type="text"
                         id="title"
@@ -39,7 +39,7 @@ export default function Form() {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="img">Image URL:</label>
+                    <label htmlFor="img">Mem URL:</label>
                     <input
                         type="text"
                         id="img"
@@ -48,7 +48,7 @@ export default function Form() {
                         required
                     />
                 </div>
-                <Button variant="contained" type="submit">ADD</Button>
+                <Button variant="contained" type="submit">Dodaj</Button>
             </form>
         </div>
     );

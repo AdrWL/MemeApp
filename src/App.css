@@ -4,11 +4,7 @@
 }
 
 .mem-main {
-  flex-grow: 1;
+  flex: 1;
   padding: 20px;
-}
-
-.main-box {
-  border: 1px solid #ddd;
-  padding: 20px;
+  overflow-y: auto;
 }
