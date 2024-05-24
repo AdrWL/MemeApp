@@ -31,7 +31,7 @@ export default function Mem({ title, upvotes, downvotes, img, onUpvote, onDownvo
     };
 
     return (
-        <div className="mem">
+        <div className="mem-container">
             <Box
                 sx={{
                     width: 200,

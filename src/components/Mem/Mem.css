@@ -1,10 +1,12 @@
-.mem {
+.mem-container {
   border: 1px solid #ddd;
   padding: 20px;
-  margin-bottom: 20px;
+  max-width: 60vh;
+  margin: 30px auto;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .mem-image {
   width: 100%;
@@ -12,18 +14,18 @@
   height: auto;
 }
 
-.mem img {
+.mem-container img {
   max-width: 100%;
   height: auto;
 }
 
-.mem .mem-voites {
+.mem-container .mem-voites {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.mem .mem-button-voite {
+.mem-container .mem-button-voite {
   flex: 1;
   padding: 10px;
   margin: 0 5px;

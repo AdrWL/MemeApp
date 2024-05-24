@@ -2,34 +2,34 @@ const initialState = {
   memes: [
     {
       id: 1,
-      title: "Mem 1",
+      title: "Wróbel sąsiada",
       upvotes: 6,
       downvotes: 0,
-      img: "path/to/image1.png",
+      img: "images/memes/image1.webp",
       value: 2,
     },
     {
       id: 2,
-      title: "Mem 2",
+      title: "Budowlańcy",
       upvotes: 1,
       downvotes: 2,
-      img: "path/to/image2.png",
+      img: "images/memes/image2.webp",
       value: 2,
     },
     {
       id: 3,
-      title: "Mem 3",
+      title: "Za co $?",
       upvotes: 6,
       downvotes: 0,
-      img: "path/to/image3.png",
+      img: "images/memes/image3.webp",
       value: 2,
     },
     {
       id: 4,
-      title: "Mem 4",
+      title: "Yoda",
       upvotes: 6,
       downvotes: 0,
-      img: "path/to/image4.png",
+      img: "images/memes/image4.webp",
       value: 2,
     },
   ],
@@ -77,6 +77,13 @@ export const memeReducer = (state = initialState, action) => {
       return {
         ...state,
         memes: newMemes,
+      };
+    }
+    case "ADD_MEME": {
+      const newMeme = { ...action.payload, id: state.memes.length + 1 };
+      return {
+        ...state,
+        memes: [...state.memes, newMeme],
       };
     }
     default:
