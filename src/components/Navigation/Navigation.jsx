@@ -18,6 +18,11 @@ export default function Navigation() {
                             <Button variant="contained">Hot</Button>
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink to="/form">
+                            <Button variant="contained">ADD</Button>
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>
