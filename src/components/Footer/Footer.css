@@ -22,7 +22,7 @@
 }
 
 .footer .footer-link:hover {
-  color: #E91E63;
+  color: #e91e63;
 }
 
 .footer .footer-bottom {
@@ -30,26 +30,21 @@
 }
 
 @media (max-width: 1648px) {
-
   .footer .footer-content {
     font-size: 2rem;
   }
-  
+
   .footer .footer-bottom {
     font-size: 2rem;
   }
-
 }
 
 @media (max-width: 900px) {
-
   .footer .footer-content {
     font-size: 1.2rem;
   }
-  
+
   .footer .footer-bottom {
     font-size: 1.2rem;
   }
-
 }
-

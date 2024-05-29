@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Hot from './components/Hot/Hot';
@@ -19,7 +19,7 @@ function App() {
               <Route path="/hot" element={<Hot />} />
               <Route path="/regular" element={<Regular />} />
               <Route path="/form" element={<Form />} />
-              <Route path="/" element={<Home/>} />
+              <Route path="/" element={<Home />} />
             </Routes>
           </div>
         </div>

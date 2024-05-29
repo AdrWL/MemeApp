@@ -2,34 +2,34 @@ const initialState = {
   memes: [
     {
       id: 1,
-      title: "Wróbel sąsiada",
+      title: 'Wróbel sąsiada',
       upvotes: 6,
       downvotes: 0,
-      img: "images/memes/image1.webp",
+      img: 'images/memes/image1.webp',
       value: 2,
     },
     {
       id: 2,
-      title: "Budowlańcy",
+      title: 'Budowlańcy',
       upvotes: 1,
       downvotes: 2,
-      img: "images/memes/image2.webp",
+      img: 'images/memes/image2.webp',
       value: 2,
     },
     {
       id: 3,
-      title: "Za co $?",
+      title: 'Za co $?',
       upvotes: 6,
       downvotes: 0,
-      img: "images/memes/image3.webp",
+      img: 'images/memes/image3.webp',
       value: 2,
     },
     {
       id: 4,
-      title: "Yoda",
+      title: 'Yoda',
       upvotes: 6,
       downvotes: 0,
-      img: "images/memes/image4.webp",
+      img: 'images/memes/image4.webp',
       value: 2,
     },
   ],
@@ -37,8 +37,10 @@ const initialState = {
 
 export const memeReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "UPVOTE": {
-      const index = state.memes.findIndex((mem) => mem.title === action.payload);
+    case 'UPVOTE': {
+      const index = state.memes.findIndex(
+        (mem) => mem.title === action.payload
+      );
       if (index === -1) return state;
 
       const newMemes = [...state.memes];
@@ -51,8 +53,10 @@ export const memeReducer = (state = initialState, action) => {
         memes: newMemes,
       };
     }
-    case "DOWNVOTE": {
-      const index = state.memes.findIndex((mem) => mem.title === action.payload);
+    case 'DOWNVOTE': {
+      const index = state.memes.findIndex(
+        (mem) => mem.title === action.payload
+      );
       if (index === -1) return state;
 
       const newMemes = [...state.memes];
@@ -65,8 +69,10 @@ export const memeReducer = (state = initialState, action) => {
         memes: newMemes,
       };
     }
-    case "CHANGE_RATING": {
-      const index = state.memes.findIndex((mem) => mem.title === action.payload.title);
+    case 'CHANGE_RATING': {
+      const index = state.memes.findIndex(
+        (mem) => mem.title === action.payload.title
+      );
       if (index === -1) return state;
 
       const newMemes = [...state.memes];
@@ -79,7 +85,7 @@ export const memeReducer = (state = initialState, action) => {
         memes: newMemes,
       };
     }
-    case "ADD_MEME": {
+    case 'ADD_MEME': {
       const newMeme = { ...action.payload, id: state.memes.length + 1 };
       return {
         ...state,
