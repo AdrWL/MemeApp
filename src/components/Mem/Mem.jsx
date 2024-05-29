@@ -26,7 +26,7 @@ export default function Mem({ title, upvotes, downvotes, img, onUpvote, onDownvo
     const dispatch = useDispatch();
     const [hover, setHover] = React.useState(-1);
 
-    const handleRatingChange = (event, newValue) => {
+    const handleRatingChange = (e, newValue) => {
         dispatch({ type: "CHANGE_RATING", payload: { title, value: newValue } });
     };
 
@@ -45,7 +45,7 @@ export default function Mem({ title, upvotes, downvotes, img, onUpvote, onDownvo
                     precision={0.5}
                     getLabelText={getLabelText}
                     onChange={handleRatingChange}
-                    onChangeActive={(event, newHover) => {
+                    onChangeActive={(e, newHover) => {
                         setHover(newHover);
                     }}
                     emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
@@ -54,7 +54,7 @@ export default function Mem({ title, upvotes, downvotes, img, onUpvote, onDownvo
                     <Box sx={{ ml: 2 }}>{labels[hover !== -1 ? hover : value]}</Box>
                 )}
             </Box>
-            <h3>{title}</h3>
+            <h3 className="mem-title">{title}</h3>
             <img src={img} alt={title} className="mem-image" />
             <div className="mem-voites">
                 <button className="mem-button-voite" onClick={onUpvote}>👍 {upvotes}</button>

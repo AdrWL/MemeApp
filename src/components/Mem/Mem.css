@@ -32,3 +32,35 @@
   border: 1px solid #ddd;
   cursor: pointer;
 }
+
+@media (max-width: 1648px) {
+
+  .mem-title {
+    font-size: 2rem;
+  }
+
+  .mem-container .mem-button-voite {
+    font-size: 2rem;
+  }
+
+  .MuiBox-root {
+    font-size: 2rem;
+  }
+
+  .MuiRating-decimal {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .MuiBox-root {
+    font-size: 1rem;
+  }
+
+  .MuiRating-decimal {
+    font-size: 1.5rem;
+  }
+
+}

@@ -7,4 +7,15 @@
   flex: 1;
   padding: 20px;
   overflow-y: auto;
+  padding-bottom: 200px;
+}
+
+@media (max-width: 1648px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }  
+ 
 }
