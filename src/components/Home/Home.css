@@ -1,0 +1,27 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #f5f5f5;
+  }
+  
+  .home-container .MuiContainer-root {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .home-container .MuiTypography-h4 {
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .home-container .MuiTypography-body1 {
+    color: #555;
+  }
+
+  
+  
