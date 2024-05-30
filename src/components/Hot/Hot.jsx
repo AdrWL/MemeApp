@@ -20,7 +20,7 @@ export default function Hot() {
     <div>
       {memes.map((mem) => (
         <Mem
-          key={mem.title}
+          key={mem.id}
           {...mem}
           onUpvote={() => handleUpvote(mem.title)}
           onDownvote={() => handleDownvote(mem.title)}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Button from '@mui/material/Button';
+import { v4 as uuidv4 } from 'uuid';
 import './Form.css';
 
 export default function Form() {
@@ -14,6 +15,7 @@ export default function Form() {
     dispatch({
       type: 'ADD_MEME',
       payload: {
+        id: uuidv4(),
         title,
         upvotes: 0,
         downvotes: 0,
@@ -35,7 +37,6 @@ export default function Form() {
           <label htmlFor="title">Tytuł mema:</label>
           <input
             type="text"
-            id="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
@@ -45,7 +46,6 @@ export default function Form() {
           <label htmlFor="img">Mem URL:</label>
           <input
             type="text"
-            id="img"
             value={img}
             onChange={(e) => setImg(e.target.value)}
             required

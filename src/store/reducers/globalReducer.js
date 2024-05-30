@@ -1,7 +1,9 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const initialState = {
   memes: [
     {
-      id: 1,
+      id: uuidv4(),
       title: 'Wróbel sąsiada',
       upvotes: 6,
       downvotes: 0,
@@ -9,7 +11,7 @@ const initialState = {
       value: 2,
     },
     {
-      id: 2,
+      id: uuidv4(),
       title: 'Budowlańcy',
       upvotes: 1,
       downvotes: 2,
@@ -17,7 +19,7 @@ const initialState = {
       value: 2,
     },
     {
-      id: 3,
+      id: uuidv4(),
       title: 'Za co $?',
       upvotes: 6,
       downvotes: 0,
@@ -25,7 +27,7 @@ const initialState = {
       value: 2,
     },
     {
-      id: 4,
+      id: uuidv4(),
       title: 'Yoda',
       upvotes: 6,
       downvotes: 0,
