@@ -18,6 +18,7 @@ Aplikacja do wyświetlania memów względem oceny przez użytkowników w kategor
 - React Router
 - Styled Components
 - Material-UI (MUI)
+- UUID
 
 
 ## Instalacja i uruchomienie
