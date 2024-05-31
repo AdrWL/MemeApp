@@ -45,7 +45,7 @@ nav a.active {
   background-color: rgb(64, 128, 0);
 }
 
-@media (max-width: 1648px) {
+@media (max-width: 1348px) {
   nav {
     width: 100%;
     height: auto;

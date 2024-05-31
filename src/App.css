@@ -10,7 +10,7 @@
   padding-bottom: 200px;
 }
 
-@media (max-width: 1648px) {
+@media (max-width: 1348px) {
   .container {
     display: flex;
     flex-direction: column;

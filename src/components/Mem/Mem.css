@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1648px) {
+@media (max-width: 1348px) {
   .mem-title {
     font-size: 2rem;
   }

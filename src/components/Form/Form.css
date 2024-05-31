@@ -29,7 +29,7 @@
   text-align: center;
 }
 
-@media (max-width: 1648px) {
+@media (max-width: 1348px) {
   .form-group {
     font-size: 1.4em;
   }

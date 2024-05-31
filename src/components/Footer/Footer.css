@@ -29,7 +29,7 @@
   font-size: 0.75rem;
 }
 
-@media (max-width: 1648px) {
+@media (max-width: 1348px) {
   .footer .footer-content {
     font-size: 2rem;
   }
