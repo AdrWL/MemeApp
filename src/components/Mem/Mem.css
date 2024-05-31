@@ -1,0 +1,62 @@
+.mem-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  max-width: 60vh;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mem-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.mem-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mem-container .mem-voites {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.mem-container .mem-button-voite {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+@media (max-width: 1348px) {
+  .mem-title {
+    font-size: 2rem;
+  }
+
+  .mem-container .mem-button-voite {
+    font-size: 2rem;
+  }
+
+  .MuiBox-root {
+    font-size: 2rem;
+  }
+
+  .MuiRating-decimal {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .MuiBox-root {
+    font-size: 1rem;
+  }
+
+  .MuiRating-decimal {
+    font-size: 1.5rem;
+  }
+}

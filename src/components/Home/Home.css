@@ -1,0 +1,43 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  
+  .home-container .MuiContainer-root {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .home-container .MuiTypography-h4 {
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .home-container .MuiTypography-body1 {
+    color: #555;
+  }
+
+  @media (max-width: 1366px) {
+    .home-container .MuiTypography-root {
+      font-size: 2rem;
+    }
+  }
+
+
+  @media (max-width: 1180px) {
+    .home-container .MuiTypography-root {
+      font-size: 1.5rem;
+    }
+  }
+
+  
+  @media (max-width: 720px) {
+    .home-container .MuiTypography-root {
+      font-size: 1rem;
+    }
+  }
