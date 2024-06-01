@@ -1,4 +1,8 @@
 # MEM-APP
+![MemeApp](https://github.com/AdrWL/MemeApp/assets/105071559/3cf18aee-c847-4944-a9c9-758e47cac7b3)
+
+
+![Przechwytywanie](https://github.com/AdrWL/MemeApp/assets/105071559/5d5f7d1a-af22-4915-a444-3c40a103edc3)
 
 Aplikacja do wyświetlania memów względem oceny przez użytkowników w kategoriach Regular albo Hot oraz umożliwiająca dodawanie nowych memów z internetu i oznaczanie memów gwiazdkami bądź łapkami w górę albo w dół.
 
@@ -19,6 +23,12 @@ Aplikacja do wyświetlania memów względem oceny przez użytkowników w kategor
 - Styled Components
 - Material-UI (MUI)
 - UUID
+
+![carbon](https://github.com/AdrWL/MemeApp/assets/105071559/7743c9fe-e899-4430-863b-86b7ba5e6c06)
+
+![carbon (1)](https://github.com/AdrWL/MemeApp/assets/105071559/e9663a9d-afa7-4849-9091-c4d6d51fdf3f)
+
+![carbon (2)](https://github.com/AdrWL/MemeApp/assets/105071559/1cde9836-c99a-4ff4-b10f-296485920d11)
 
 
 ## Instalacja i uruchomienie
