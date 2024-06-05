@@ -28,7 +28,7 @@ Aplikacja do wyświetlania memów względem oceny przez użytkowników w kategor
 
 ![carbon (1)](https://github.com/AdrWL/MemeApp/assets/105071559/e9663a9d-afa7-4849-9091-c4d6d51fdf3f)
 
-![carbon (2)](https://github.com/AdrWL/MemeApp/assets/105071559/1cde9836-c99a-4ff4-b10f-296485920d11)
+![carbon (2)](https://github.com/AdrWL/MemeApp/assets/105071559/4b866641-576f-481d-9b22-f1d40f9e8814)
 
 
 ## Instalacja i uruchomienie
