@@ -88,7 +88,7 @@ export const memeReducer = (state = initialState, action) => {
       };
     }
     case 'ADD_MEME': {
-      const newMeme = { ...action.payload, id: state.memes.length + 1 };
+      const newMeme = { ...action.payload, id: uuidv4() };
       return {
         ...state,
         memes: [...state.memes, newMeme],
