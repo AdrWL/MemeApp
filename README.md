@@ -24,9 +24,9 @@ Aplikacja do wyświetlania memów względem oceny przez użytkowników w kategor
 - Material-UI (MUI)
 - UUID
 
-![carbon](https://github.com/AdrWL/MemeApp/assets/105071559/84ce4d48-2dec-4c56-8e56-5f2594cde81c)
+![carbon (4)](https://github.com/AdrWL/MemeApp/assets/105071559/4d827e6b-8560-4bec-84a7-d02e6e2927f6)
 
-![carbon (1)](https://github.com/AdrWL/MemeApp/assets/105071559/d7d32cfa-cf4f-40d1-b285-a0b26655387a)
+![carbon (3)](https://github.com/AdrWL/MemeApp/assets/105071559/31010fac-c6ea-4016-9c3a-6f58e5594532)
 
 ![carbon (2)](https://github.com/AdrWL/MemeApp/assets/105071559/551e966d-51eb-489c-bce7-a391f11f04f0)
 
