@@ -8,12 +8,12 @@ export default function Regular() {
   );
   const dispatch = useDispatch();
 
-  const handleUpvote = (title) => {
-    dispatch({ type: 'UPVOTE', payload: title });
+  const handleUpvote = (id) => {
+    dispatch({ type: 'UPVOTE', payload: id });
   };
 
-  const handleDownvote = (title) => {
-    dispatch({ type: 'DOWNVOTE', payload: title });
+  const handleDownvote = (id) => {
+    dispatch({ type: 'DOWNVOTE', payload: id });
   };
 
   return (
@@ -22,8 +22,8 @@ export default function Regular() {
         <Mem
           key={mem.id}
           {...mem}
-          onUpvote={() => handleUpvote(mem.title)}
-          onDownvote={() => handleDownvote(mem.title)}
+          onUpvote={() => handleUpvote(mem.id)}
+          onDownvote={() => handleDownvote(mem.id)}
         />
       ))}
     </div>

@@ -41,7 +41,7 @@ export const memeReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'UPVOTE': {
       const index = state.memes.findIndex(
-        (mem) => mem.title === action.payload
+        (mem) => mem.id === action.payload
       );
       if (index === -1) return state;
 
@@ -57,7 +57,7 @@ export const memeReducer = (state = initialState, action) => {
     }
     case 'DOWNVOTE': {
       const index = state.memes.findIndex(
-        (mem) => mem.title === action.payload
+        (mem) => mem.id === action.payload
       );
       if (index === -1) return state;
 
@@ -73,7 +73,7 @@ export const memeReducer = (state = initialState, action) => {
     }
     case 'CHANGE_RATING': {
       const index = state.memes.findIndex(
-        (mem) => mem.title === action.payload.title
+        (mem) => mem.id === action.payload.id
       );
       if (index === -1) return state;
 

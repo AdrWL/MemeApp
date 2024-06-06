@@ -23,6 +23,7 @@ function getLabelText(value) {
 }
 
 export default function Mem({
+  id,
   title,
   upvotes,
   downvotes,
@@ -35,7 +36,7 @@ export default function Mem({
   const [hover, setHover] = React.useState(-1);
 
   const handleRatingChange = (e, newValue) => {
-    dispatch({ type: 'CHANGE_RATING', payload: { title, value: newValue } });
+    dispatch({ type: 'CHANGE_RATING', payload: { id, value: newValue } });
   };
 
   return (
