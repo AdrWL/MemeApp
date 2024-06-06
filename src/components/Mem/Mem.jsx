@@ -28,8 +28,6 @@ export default function Mem({
   upvotes,
   downvotes,
   img,
-  onUpvote,
-  onDownvote,
   value,
 }) {
   const dispatch = useDispatch();
@@ -37,6 +35,14 @@ export default function Mem({
 
   const handleRatingChange = (e, newValue) => {
     dispatch({ type: 'CHANGE_RATING', payload: { id, value: newValue } });
+  };
+
+  const handleUpvote = () => {
+    dispatch({ type: 'UPVOTE', payload: id });
+  };
+
+  const handleDownvote = () => {
+    dispatch({ type: 'DOWNVOTE', payload: id });
   };
 
   return (
@@ -66,10 +72,10 @@ export default function Mem({
       <h3 className="mem-title">{title}</h3>
       <img src={img} alt={title} className="mem-image" />
       <div className="mem-voites">
-        <button className="mem-button-voite" onClick={onUpvote}>
+        <button className="mem-button-voite" onClick={handleUpvote}>
           👍 {upvotes}
         </button>
-        <button className="mem-button-voite" onClick={onDownvote}>
+        <button className="mem-button-voite" onClick={handleDownvote}>
           👎 {downvotes}
         </button>
       </div>
